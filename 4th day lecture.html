@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table with All Attributes</title>
+
+</head>
+<body>
+
+<table 
+  border="1" 
+  cellpadding="15" 
+  cellspacing="12" 
+  
+ 
+  summary="This is a summary of the table" 
+  width="100%" 
+  align="center" 
+  bgcolor="#d3f4ff"
+>
+  <!-- Table caption -->
+  <caption align="top">Table Caption (Top-Aligned)</caption>
+
+  <!-- Column group with styling -->
+  <colgroup span="2" style="background-color: #e6f7ff;"></colgroup>
+  <colgroup span="2" style="background-color: #ffebcc;"></colgroup>
+
+  <!-- Table header -->
+  <thead>
+    <tr align="center" bgcolor="#ffcccc" valign="middle">
+      <th scope="col">Header 1</th>
+      <th scope="col">Header 2</th>
+      <th scope="col">Header 3</th>
+      <th scope="col">Header 4</th>
+    </tr>
+  </thead>
+
+  <!-- Table body -->
+  <tbody>
+    <tr align="left" valign="top" bgcolor="#ccffcc">
+      <td colspan="2" headers="Header 1 Header 2" border="0">Row 1, Cell 1 (colspan=2)</td>
+      <td>Row 1, Cell 3</td>
+      <td>Row 1, Cell 4</td>
+    </tr>
+    <tr>
+      <td rowspan="" headers="Header 1">Row 2-3, Cell 1 (rowspan=2)</td>
+      <td>Row 2, Cell 2</td>
+      <td>Row 2, Cell 3</td>
+      <td>Row 2, Cell 4</td>
+    </tr>
+    <tr>
+      <td>Row 3, Cell 2</td>
+      <td>Row 3, Cell 3</td>
+      <td>Row 3, Cell 4</td>
+    </tr>
+	<tr>
+      <td colspan="2">Row 3, Cell 2</td>
+      <td>Row 3, Cell 3</td>
+      <td>Row 3, Cell 4</td>
+    </tr>
+  </tbody>
+
+  <!-- Table footer -->
+  <tfoot>
+    <tr>
+      <td colspan="4" align="center" valign="middle">Table Footer (colspan=4)</td>
+    </tr>
+  </tfoot>
+</table>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remove Specific Cell Border</title>
+  <style>
+    td:nth-child(3) { /* Targets the 3rd <td> in each row */
+      border: none !important;
+    }
+  </style>
+</head>
+<body>
+  <table border="1">
+    <tr>
+      <td>Cell 1</td>
+      <td>Cell 2</td>
+      <td bgcolor="#ccffcc">Cell 3 (No Border)</td>
+      <td>Cell 4</td>
+      <td>Cell 5</td>
+    </tr>
+  </table>
+</body>
+</html>

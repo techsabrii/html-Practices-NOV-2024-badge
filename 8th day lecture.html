@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Example</title>
+</head>
+<body>
+
+
+    <form >
+        <!-- Grouping related form elements -->
+        <fieldset >
+            <!-- Caption for the fieldset -->
+            <legend>Personal Information</legend>
+            
+            <!-- Input field for first name -->
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Enter your first name"><br><br>
+            
+            <!-- Input field for last name -->
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Enter your last name"><br><br>
+            
+            <!-- Multiline text input -->
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" cols="20" placeholder="Enter your address in detail"></textarea><br><br>
+        </fieldset>
+        
+        <!-- Dropdown menu -->
+
+
+
+        <label>Gender:</label>
+        <select >
+            <optgroup label="Select Gender" disabled>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </optgroup>
+            <optgroup label="Select Gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </optgroup>
+        </select><br><br>
+
+
+
+        
+        
+        <!-- Datalist for autocomplete -->
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" list="city-options" placeholder="Enter your city">
+
+
+
+        <datalist id="city-options">
+            <option value="New York"></option>
+            <option value="Los Angeles"></option>
+            <option value="Chicago"></option>
+            <option value="Houston"></option>
+            <option value="Rawalakot"></option>
+            <option value="Baggh"></option>
+            <option value="Mirpur"></option>
+            <option value="Kotli"></option>
+
+        </datalist>
+
+
+ <datalist id="basit">
+            <option value="New York"></option>
+            <option value="Los Angeles"></option>
+            <option value="Chicago"></option>
+           
+
+        </datalist>
+
+
+<br><br>
+        
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
+
+
+
+        <br<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>>
+    </form>
+</body>
+</html>

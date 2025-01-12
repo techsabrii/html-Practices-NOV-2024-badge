@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags Example</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"  />
+</head>
+<body>
+    <h1>HTML Image, Media, and Graphics Tags Example</h1>
+
+    <!-- <a> Tag -->
+
+
+
+    <h2>Hyperlink</h2>
+    <a href="https://techsabrii.com" >View </a>
+
+
+
+
+    <h2>Inline Frame</h2>
+    <iframe src="https://techsabrii.com" width="100%" height="450" ></iframe>
+
+
+
+
+
+
+ 
+
+
+
+    <!-- <audio> Tag -->
+    <h2>Audio</h2>
+
+
+
+    <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+   
+
+
+
+
+
+    <!-- <video> Tag -->
+    <h2>Video</h2>
+
+
+    <video controls width="400">
+        <source src="D:\Web-Development\Html\HTML  Anchor Tag Tutorial(mailto link & Internal Page) in Hindi  Urdu.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+
+
+
+
+    <!-- <embed> Tag -->
+    <h2>Embed External Content</h2>
+    <embed src="https://techsabrii.com/img/icon/logo.png" width="300" height="300" type="image/png">
+
+    <!-- Updated Content From Previous -->
+    <!-- <img> Tag -->
+ 
+
+
+    <h2>Image</h2>
+    <img src="D:\Photos\1668134762286.jpg" alt="Placeholder Image" width="150" height="150">
+
+
+
+
+
+
+   
+    <!-- <map> and <area> Tags -->
+    <h2>Image Map</h2>
+    <img src="https://techsabrii.com/img/icon/logo.png" usemap="#imagemap" alt="Image with clickable areas">
+    <map name="imagemap">
+        <area shape="rect" coords="0,0,200,100" href="https://example.com" alt="Example Link">
+        <area shape="circle" coords="300,100,50" href="https://www.google.com/maps/@33.8517367,73.7740364,17.96z?entry=ttu&g_ep=EgoyMDI0MTIwOC4wIKXMDSoASAFQAw%3D%3D" alt="Google Map Location">
+    </map>
+
+
+
+ 
+
+    <!-- <picture> Tag -->
+    <h2>Responsive Image with Picture</h2>
+    <picture>
+        <source media="(max-width: 600px)" srcset="https://techsabrii.com/img/icon/logo.png">
+        <source media="(min-width: 601px)" srcset="https://techsabrii.com/img/icon/logo.png">
+        <img src="https://techsabrii.com/img/icon/logo.png" alt="Responsive Image">
+        <img src="https://techsabrii.com/img/icon/logo.png" alt="Responsive Image">
+    </picture>
+
+
+  
+
+    <!-- <figure> and <figcaption> Tags -->
+    <h2>Figure and Figcaption</h2>
+    <figure>
+        <img src="https://techsabrii.com/img/icon/logo.png" alt="A diagram">
+        <figcaption>A diagram illustrating something meaningful.</figcaption>
+    </figure>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- <iframe> Tag -->
+    <!-- <canvas> Tag -->
+    <h2>Canvas Graphics</h2>
+    <canvas id="myCanvas" width="400" height="200" style="border:1px solid #000;"></canvas>
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = "blue";
+        ctx.fillRect(50, 50, 100, 50);
+    </script>
+
+    <!-- <svg> Tag -->
+
+
+
+    <h2>SVG Graphics</h2>
+    <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="50" fill="red" />
+        <rect x="50" y="50" width="100" height="100" fill="blue" opacity="0.5" />
+        <text x="50" y="190" fill="green">Hello SVG</text>
+    </svg>
+
+<i class="fa-brands fa-square-facebook" ></i>
+
+
+</body>
+</html>
