@@ -8,23 +8,29 @@
 </head>
 <body>
 
-<table 
-  border="1" 
-  cellpadding="15" 
-  cellspacing="12" 
-  
- 
-  summary="This is a summary of the table" 
-  width="100%" 
-  align="center" 
+<table
+  border="10"
+  cellpadding="12"
+  cellspacing="0"
+bordercolor="#d3f4ff"
+
+
+  width="100%"
+  align="center"
   bgcolor="#d3f4ff"
 >
   <!-- Table caption -->
   <caption align="top">Table Caption (Top-Aligned)</caption>
 
   <!-- Column group with styling -->
-  <colgroup span="2" style="background-color: #e6f7ff;"></colgroup>
-  <colgroup span="2" style="background-color: #ffebcc;"></colgroup>
+  <colgroup span="2" >
+	
+<col bgcolor="brown">
+<col bgcolor="green">
+<col>
+<col>
+  </colgroup>
+
 
   <!-- Table header -->
   <thead>
@@ -44,7 +50,7 @@
       <td>Row 1, Cell 4</td>
     </tr>
     <tr>
-      <td rowspan="" headers="Header 1">Row 2-3, Cell 1 (rowspan=2)</td>
+      <td rowspan="2" headers="Header 1">Row 2-3, Cell 1 (rowspan=2)</td>
       <td>Row 2, Cell 2</td>
       <td>Row 2, Cell 3</td>
       <td>Row 2, Cell 4</td>
@@ -64,7 +70,7 @@
   <!-- Table footer -->
   <tfoot>
     <tr>
-      <td colspan="4" align="center" valign="middle">Table Footer (colspan=4)</td>
+      <td colspan="4" align="center" >Table Footer (colspan=4)</td>
     </tr>
   </tfoot>
 </table>
