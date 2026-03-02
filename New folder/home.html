@@ -2,6 +2,21 @@
 <head>
 <title>My anchor Page</title>
 </head>
+  <script>
+(function () {
+    // Current page full URL
+    let url = window.location.pathname;
+
+    // Remove file name (home.html etc)
+    let basePath = url.substring(0, url.lastIndexOf('/') + 1);
+
+    // Create base tag dynamically
+    let base = document.createElement('base');
+    base.href = basePath;
+
+    document.head.appendChild(base);
+})();
+</script>
 <body>
 
 <table width="80%" align="center">
